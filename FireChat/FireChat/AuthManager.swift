@@ -10,24 +10,32 @@ import FirebaseAuth // <-- Import Firebase Auth
 
 @Observable // <-- Make class observable
 class AuthManager {
-
-    // A property to store the logged in user. User is an object provided by FirebaseAuth framework
+    
     var user: User?
-
-    // Determines if AuthManager should use mocked data
-    let isMocked: Bool
-
+    
+    let isMocked: Bool = false
+    
+    var isSignedIn: Bool = false
+    
     var userEmail: String? {
-
-        // If mocked, return a mocked email string, otherwise return the users email if available
+        
         isMocked ? "kingsley@dog.com" : user?.email
+        
     }
-
-    init(isMocked: Bool = false) {
-
-       self.isMocked = isMocked
-
-       // TODO: Check for cached user for persisted login
+    
+    private var handle: AuthStateDidChangeListenerHandle?
+    
+    init() {
+        handle = Auth.auth().addStateDidChangeListener { [weak self] _, user in
+            self?.user = user
+            self?.isSignedIn = user != nil
+        }
+    }
+    
+    deinit {
+        if let handle = handle {
+            Auth.auth().removeStateDidChangeListener(handle)
+        }
     }
 
     // https://firebase.google.com/docs/auth/ios/start#sign_up_new_users
