@@ -17,6 +17,7 @@ xcuserdata/
 # Swift Package Manager
 .build/
 .swiftpm/xcode/package.xcworkspace/xcuserdata/
+GoogleService-Info.plist
 
 # Environment variables and secrets
 .env
