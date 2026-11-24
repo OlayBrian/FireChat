@@ -11,7 +11,7 @@ import FirebaseCore
 @main
 struct FireChatApp: App {
     
-    @State private var authManager: AuthManager // <-- Create a state managed authManager property
+    @State private var authManager: AuthManager
 
     init() {
         FirebaseApp.configure()
@@ -21,22 +21,12 @@ struct FireChatApp: App {
 
     var body: some Scene {
         WindowGroup {
-            if authManager.user != nil { // <-- Check if you have a non-nil user (means there is a logged in user)
-                
-                // We have a logged in user, go to ChatView
-                NavigationStack {
-                    Text("Welcome to FireChat!")
-                        .navigationTitle("Chat")
-                        .navigationBarTitleDisplayMode(.inline)
-                        .toolbar {
-                            ToolbarItem {
-                                Button("Sign out") {
-                                    authManager.signOut()
-                                }
-                            }
-                        }
-                }
-            } else {
+                    if authManager.user != nil {
+
+                        // We have a logged in user, go to ChatView
+                        ChatView() // <-- Add ChatView
+                            .environment(authManager) // <-- Pass authManager to the environment
+                    } else {
                 
                 // No logged in user, go to LoginView
                 LoginView()
