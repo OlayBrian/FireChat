@@ -20,9 +20,7 @@ Firebase Authentication manages users, while Cloud Firestore synchronizes messag
 ### Features
 - [x] Create and send a text message to Firebase
 - [x] Receive messages posted to Firebase
-- [x] Distinguish if a message was sent by them or someone else based on position and color of the message
-
-### Bonus Features
+- [x] Distinguishes if a message was sent by them or someone else based on position and color of the message
 - [x] Show the user's email at the top of the chat
 - [x] Display timestamps for each message
 - [x] Clear the chat history
