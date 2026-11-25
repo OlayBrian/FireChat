@@ -10,14 +10,14 @@
 		BD8069F530B66BAE00AB5DF1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BD8069F430B66BAE00AB5DF1 /* README.md */; };
 		BD85E65A30B6401E0081E8E7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BD85E65930B6401E0081E8E7 /* FirebaseAuth */; };
 		BD85E65C30B6401E0081E8E7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BD85E65B30B6401E0081E8E7 /* FirebaseFirestore */; };
-		BDA7E87E30B7A3ED0013626A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA7E87D30B7A3ED0013626A /* GoogleService-Info.plist */; };
+		BDA7E89030B7AA210013626A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDA7E88F30B7AA210013626A /* GoogleService-Info.plist */; };
 		BDD0A44230B650540006D4CC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BDD0A44130B650540006D4CC /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD8069F430B66BAE00AB5DF1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = SOURCE_ROOT; };
-		BD85E64430B4DC0C0081E8E7 /* FireChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = FireChat.app; path = "/Users/brianribeiro/Desktop/iOS-Development/FireChat/FireChat/build/Debug-iphoneos/FireChat.app"; sourceTree = "<absolute>"; };
-		BDA7E87D30B7A3ED0013626A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD85E64430B4DC0C0081E8E7 /* FireChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA7E88F30B7AA210013626A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDD0A44130B650540006D4CC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -46,7 +46,8 @@
 				BD85E64630B4DC0C0081E8E7 /* FireChat */,
 				BDD0A44130B650540006D4CC /* .gitignore */,
 				BD8069F430B66BAE00AB5DF1 /* README.md */,
-				BDA7E87D30B7A3ED0013626A /* GoogleService-Info.plist */,
+				BD85E64430B4DC0C0081E8E7 /* FireChat.app */,
+				BDA7E88F30B7AA210013626A /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,7 +118,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				BDD0A44230B650540006D4CC /* .gitignore in Resources */,
-				BDA7E87E30B7A3ED0013626A /* GoogleService-Info.plist in Resources */,
+				BDA7E89030B7AA210013626A /* GoogleService-Info.plist in Resources */,
 				BD8069F530B66BAE00AB5DF1 /* README.md in Resources */,
 			);
 		};
@@ -273,7 +274,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brianribeiro.FireChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OlayBrian.FireChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -305,7 +306,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brianribeiro.FireChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OlayBrian.FireChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;

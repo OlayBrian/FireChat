@@ -6,6 +6,7 @@ FireChat is a real-time messaging app built with SwiftUI and Firebase. Users can
 exchange messages across devices, view timestamps, identify their own messages, and clear the chat history. 
 Firebase Authentication manages users, while Cloud Firestore synchronizes messages in real time.
 
+Go to https://firebase.google.com/ to add FireBase to the app in order for it to work, only packages required: FirebaseAuth, FirebaseRestore .
 ### What I've learned
 - [x] Creating and configuring a custom server using Firebase Firestore
 - [x] Setting up listeners for real-time updates

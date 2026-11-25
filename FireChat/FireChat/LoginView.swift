@@ -18,8 +18,7 @@ struct LoginView: View {
         VStack {
             Text("Welcome!").font(.largeTitle)
             Text("App Created By Brian Ribeiro")
-            Text("Z23638146")
-
+            
             // Email + password fields
             VStack {
                 TextField("Email", text: $email)
