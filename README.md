@@ -14,7 +14,8 @@ Firebase Authentication manages users, while Cloud Firestore synchronizes messag
 - [x] Creating observable objects to manage fetching data and authentication
 - [x] Passing observable objects in the environment
 
-<img src="FireChatGifWalkthrough.gif alt="Walkthrough of my App">
+
+<img src="FireChatGifWalkthrough.gif" alt="Walkthrough of my App">
 
 ### Features
 - [x] Create and send a text message to Firebase
