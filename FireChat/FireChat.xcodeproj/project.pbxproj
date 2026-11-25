@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD8069F530B66BAE00AB5DF1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BD8069F430B66BAE00AB5DF1 /* README.md */; };
 		BD85E65A30B6401E0081E8E7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BD85E65930B6401E0081E8E7 /* FirebaseAuth */; };
 		BD85E65C30B6401E0081E8E7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BD85E65B30B6401E0081E8E7 /* FirebaseFirestore */; };
-		BDD0A43B30B644AD0006D4CC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BDD0A43A30B644AD0006D4CC /* README.md */; };
 		BDD0A44030B6502D0006D4CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDD0A43F30B6502D0006D4CC /* GoogleService-Info.plist */; };
 		BDD0A44230B650540006D4CC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BDD0A44130B650540006D4CC /* .gitignore */; };
-		BDD0A45730B66AA30006D4CC /* FireChatGifWalkthrough.gif in Resources */ = {isa = PBXBuildFile; fileRef = BDD0A45630B66AA30006D4CC /* FireChatGifWalkthrough.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD8069F430B66BAE00AB5DF1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = SOURCE_ROOT; };
 		BD85E64430B4DC0C0081E8E7 /* FireChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDD0A43A30B644AD0006D4CC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BDD0A43F30B6502D0006D4CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDD0A44130B650540006D4CC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = SOURCE_ROOT; };
-		BDD0A45630B66AA30006D4CC /* FireChatGifWalkthrough.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = FireChatGifWalkthrough.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -46,10 +44,9 @@
 			isa = PBXGroup;
 			children = (
 				BD85E64630B4DC0C0081E8E7 /* FireChat */,
-				BDD0A43A30B644AD0006D4CC /* README.md */,
 				BDD0A43F30B6502D0006D4CC /* GoogleService-Info.plist */,
 				BDD0A44130B650540006D4CC /* .gitignore */,
-				BDD0A45630B66AA30006D4CC /* FireChatGifWalkthrough.gif */,
+				BD8069F430B66BAE00AB5DF1 /* README.md */,
 				BD85E64530B4DC0C0081E8E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,9 +126,8 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				BDD0A44230B650540006D4CC /* .gitignore in Resources */,
-				BDD0A43B30B644AD0006D4CC /* README.md in Resources */,
 				BDD0A44030B6502D0006D4CC /* GoogleService-Info.plist in Resources */,
-				BDD0A45730B66AA30006D4CC /* FireChatGifWalkthrough.gif in Resources */,
+				BD8069F530B66BAE00AB5DF1 /* README.md in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
