@@ -16,8 +16,9 @@ struct LoginView: View {
 
     var body: some View {
         VStack {
-            Text("Welcome!")
-                .font(.largeTitle)
+            Text("Welcome!").font(.largeTitle)
+            Text("App Created By Brian Ribeiro")
+            Text("Z23638146")
 
             // Email + password fields
             VStack {
@@ -26,13 +27,12 @@ struct LoginView: View {
             }
             .textFieldStyle(.roundedBorder) // <-- Style text fields (applies to both text fields within the VStack)
             .textInputAutocapitalization(.never) // <-- No auto capitalization (can be annoying for emails and passwords)
-            .padding(40)
+            .padding(20)
 
             // Sign up + Login buttons
             HStack {
                 Button("Sign Up") {
                     print("Sign up user: \(email), \(password)")
-                    // TODO: Sign up user
                     
                     authManager.signUp(email: email, password: password) // <-- Sign up user via authManager
 
@@ -42,7 +42,6 @@ struct LoginView: View {
 
                 Button("Login") {
                     print("Login user: \(email), \(password)")
-                    // TODO: Login user
                     
                     authManager.signIn(email: email, password: password) // <-- Sign in user via authManager
 
